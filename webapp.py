@@ -5,15 +5,14 @@ import pickle
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import re
-import streamlit as st
 import urllib
 from newspaper import Article
 
-app = Flask(__name__, template_folder='/Users/anhvo/umsl-hack-2021/templates')
+app = Flask(__name__, template_folder='./templates')
 
 # Load model and vectorizer
-model = pickle.load(open('/Users/anhvo/umsl-hack-2021/models/model_new.pkl', 'rb'))
-TF_IDFvector = pickle.load(open('/Users/anhvo/umsl-hack-2021/models/TF-IDF_Vector_new.pkl', 'rb'))
+model = pickle.load(open('./models/model_new.pkl', 'rb'))
+TF_IDFvector = pickle.load(open('./models/TF-IDF_Vector_new.pkl', 'rb'))
 ps = PorterStemmer()
 
 @app.route('/', methods=['GET'])
@@ -69,6 +68,9 @@ if __name__ == "__main__":
 
 
 ''' #Sreamlit
+
+import streamlit as st
+
 st.title("Missinformation Detection")
 st.text("")
 st.text("")

@@ -21,12 +21,13 @@ To run locally, follow these steps:
 2. cd into the repository in your terminal / command prompt / shell
 
 3. If you haven't already done this, create a virtual enviornment with python's `venv` library:
-  `python3 -m venv venv`
+  `python -m venv venv`
 
 4. Activate the venv: `. venv/bin/activate`
 
-5. Install dependencies, if you haven't done so already: `pip install flask`
+5. Install dependencies, if you haven't done so already:
+  `pip install flask sklearn nltk`
 
-6. Tell flask the app name, if you haven't already: `export FLASK_APP=[name]`
+6. Tell flask the app name, if you haven't already: `export FLASK_APP=[name]`, where `name` for this project is `webapp.py`
 
 7. Run the flask app: `flask run`
