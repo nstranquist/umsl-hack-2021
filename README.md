@@ -26,8 +26,9 @@ To run locally, follow these steps:
 4. Activate the venv: `. venv/bin/activate`
 
 5. Install dependencies, if you haven't done so already:
-  `pip install flask sklearn nltk`
+  `pip install flask sklearn nltk newspaper3k`
 
 6. Tell flask the app name, if you haven't already: `export FLASK_APP=[name]`, where `name` for this project is `webapp.py`
 
 7. Run the flask app: `flask run`
+  - If you are running into errors with `flask run`, try running `python webapp.py` first. It will show you if you are missing dependencies.
