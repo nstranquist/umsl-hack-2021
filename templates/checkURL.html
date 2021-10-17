@@ -45,7 +45,7 @@
   <div style="margin:auto;text-align: left;width:30%">
     {% if(result!=NULL) %}
     <p style="text-align:center"><strong>Return result from TS-IDF Model : {{result}}</strong></p>
-    <p>Please let us know if you feel this information is correct or not</p>
+    <p>Please let us know which method is returning true information</p>
     <form action="/addvote" method="POST">
       <input type="hidden" name="type" value="/checkURL.html" />
       <input type="radio" name="model" value="bert">Bert</input>

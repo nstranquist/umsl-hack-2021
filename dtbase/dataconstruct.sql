@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS `model` (
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `model`(`id`,`name`,`vote`) VALUES
-(0,'Cert',0),
+(0,'Bert',0),
 (1,'Term Frequency — Inverse Document Frequency',0);
 
 CREATE TABLE IF NOT EXISTS `pastresearch` (
