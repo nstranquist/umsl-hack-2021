@@ -29,18 +29,25 @@
    </div>
   </div>
   </nav>
-  <form action="/checkURL" method="POST">
-    <div class="col-three-forth text-center col-md-offset-2">
-     <div class="form-group">
-      <textarea class="form-control jTextarea mt-3" id="jTextarea'" rows="5" name="text"
-       placeholder="Write your text here..." required>{{text}}</textarea>
- <br><br>
-      <button class="btn btn-primary btn-outline btn-md" type="submit" name="predict">Predict</button>
-     </div>
-     {% if result %}
+  
+  <div class='container'>
+    <form action="/checkURL" method="POST">
+      <div class="col-three-forth text-center col-md-offset-2">
+        <div class="form-group">
+        <textarea class="form-control jTextarea mt-3" id="jTextarea'" rows="5" name="text"
+          placeholder="Write your text here..." required>{{text}}</textarea>
+    <br><br>
+        <button class="btn btn-primary btn-outline btn-md" type="submit" name="predict">Predict</button>
+        </div>
+      </div>
+    </form>
+ </div>
+  <br>
+  <div>
+    {% if(result!=NULL) %}
     <p style="text-align:center"><strong>Check : {{result}}</strong></p>
     {% endif %}
-    </div>
-   </form>
+  </div>
+    
 </body>
 </html>
